@@ -1,12 +1,14 @@
 <template>
     <div class="container">
         <h1>todos</h1>
-        <h2>{{todoText}}</h2>
         <form id="form" @submit="handleSubmit($event)">
             <input type="text" placeholder="Enter your todo" v-model="todoText">
             <ul class="todos">
-                <li v-for="(todo, index) in todos" :key="index" :class="{ completed: todo.completed }"
-                    @click="handleClick($event)" @contextmenu="handleMenu($event, index)">
+                <li v-for="(todo, index) in todos" 
+                    :key="index" 
+                    :class="{ completed: todo.completed }"
+                    @click="handleClick($event)" 
+                    @contextmenu="handleMenu($event, index)">
                     {{ todo.text }}
                 </li>
             </ul>
@@ -28,7 +30,7 @@ export default {
         let todos = reactive([])
         const todos_exist = JSON.parse(localStorage.getItem('todos'))
         if (todos_exist) {
-            todos = todos_exist
+            todos = reactive(todos_exist)
         }
 
         function handleSubmit(e) {
