@@ -1,15 +1,17 @@
 <script>
   import Todos from './components/Todos.vue'
   import ToastNotification from './components/ToastNotification.vue'
+  import Clock from './components/Clock.vue'
   export default{
     name: 'App',
-    components:{Todos,ToastNotification},
+    components:{Todos,ToastNotification,Clock},
   }
 </script>
 
 <template>
   <!-- <Todos/> -->
-  <ToastNotification/>
+  <!-- <ToastNotification/> -->
+  <Clock></Clock>
 </template>
 
 <style>

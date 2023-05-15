@@ -14,7 +14,7 @@ export default {
     name: 'ToastNotification',
     setup() {
         const msgList = reactive([])
-
+        
         function handleClick() {
             addNotification()
         }
@@ -34,6 +34,7 @@ export default {
             handleClick
         }
     }
+
 }
 </script>
 

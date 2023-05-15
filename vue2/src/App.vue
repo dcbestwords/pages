@@ -1,17 +1,20 @@
 <template>
   <!-- <Todos></Todos> -->
-  <ToastNotification/>
+  <!-- <ToastNotification/> -->
+  <Clock></Clock>
 </template>
 
 <script>
 import Todos from './components/myTodos'
 import ToastNotification from './components/ToastNotification'
+import Clock from './components/Clock'
 
 export default {
   name: 'App',
   components: {
     Todos,
-    ToastNotification
+    ToastNotification,
+    Clock
   }
 }
 </script>
