@@ -2,16 +2,19 @@
   import Todos from './components/Todos.vue'
   import ToastNotification from './components/ToastNotification.vue'
   import Clock from './components/Clock.vue'
+  import Testimonial from './components/testimonial-box-switcher.vue'
+
   export default{
     name: 'App',
-    components:{Todos,ToastNotification,Clock},
+    components:{Todos,ToastNotification,Clock,Testimonial},
   }
 </script>
 
 <template>
   <!-- <Todos/> -->
   <!-- <ToastNotification/> -->
-  <Clock></Clock>
+  <!-- <Clock></Clock> -->
+  <Testimonial></Testimonial>
 </template>
 
 <style>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-container {
+    max-width: 768px;
+    background-color: #476ce4;
+    color: #fff;
+    border-radius: 20px;
+    padding: 50px 80px;
+    position: relative;
+}
+
+.progress {
+    height: 4px;
+    width: 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    animation: grow 10s linear infinite;
+}
+
+
+.fas {
+    font-size: 30px;
+    opacity: 0.5;
+}
+
+.fas.fa-quote-left {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+}
+
+.fas.fa-quote-right {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+}
+
+.info {
+    text-align: justify;
+    line-height: 28px;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user .avator {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user .introduce {
+    padding: 0 10px;
+}
+
+.user .introduce .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+@keyframes grow {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-container {
+        padding: 20px 30px;
+    }
+
+    .fas.fa-quote {
+        display: none;
+    }
+}
