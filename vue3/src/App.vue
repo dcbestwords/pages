@@ -3,10 +3,11 @@
   import ToastNotification from './components/ToastNotification.vue'
   import Clock from './components/Clock.vue'
   import Testimonial from './components/testimonial-box-switcher.vue'
+  import StickyNavigation from './components/StickyNavigation.vue'
 
   export default{
     name: 'App',
-    components:{Todos,ToastNotification,Clock,Testimonial},
+    components:{Todos,ToastNotification,Clock,Testimonial,StickyNavigation},
   }
 </script>
 
@@ -14,7 +15,8 @@
   <!-- <Todos/> -->
   <!-- <ToastNotification/> -->
   <!-- <Clock></Clock> -->
-  <Testimonial></Testimonial>
+  <!-- <Testimonial></Testimonial> -->
+  <StickyNavigation></StickyNavigation>
 </template>
 
 <style>

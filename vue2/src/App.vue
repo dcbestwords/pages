@@ -2,7 +2,8 @@
   <!-- <Todos></Todos> -->
   <!-- <ToastNotification/> -->
   <!-- <Clock></Clock> -->
-  <Testimonial></Testimonial>
+  <!-- <Testimonial></Testimonial> -->
+  <StickyNavigation></StickyNavigation>
 </template>
 
 <script>
@@ -10,6 +11,7 @@ import Todos from './components/myTodos'
 import ToastNotification from './components/ToastNotification'
 import Clock from './components/Clock'
 import Testimonial from './components/testimonial-box-switcher'
+import StickyNavigation from './components/StickyNavigation'
 
 export default {
   name: 'App',
@@ -17,7 +19,8 @@ export default {
     Todos,
     ToastNotification,
     Clock,
-    Testimonial
+    Testimonial,
+    StickyNavigation
   }
 }
 </script>
